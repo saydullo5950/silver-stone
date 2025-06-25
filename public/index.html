@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/public/css/styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+   <!-- Navbar -->
+   <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="text-2xl font-bold">KechgiVanna</div>
+
+      <!-- Hamburger (mobile) -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Desktop menu -->
+      <ul class="hidden md:flex space-x-6 font-medium">
+        <li><a href="#asosiy" class="hover:text-gray-300">Asosiy</a></li>
+        <li><a href="#mahsulotlar" class="hover:text-gray-300">Mahsulotlar</a></li>
+        <li><a href="#afzallik" class="hover:text-blue-600">Afzalliklar</a></li>
+        <li><a href="#boglanish" class="hover:text-gray-300">Bog'lanish</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile menu -->
+    <ul id="mobile-menu" class="hidden md:hidden flex-col space-y-2 px-4 pb-4 font-medium bg-blue-800">
+      <li><a href="#asosiy" class="block hover:text-gray-300">Asosiy</a></li>
+      <li><a href="#mahsulotlar" class="block hover:text-gray-300">Mahsulotlar</a></li>
+      <li><a href="#afzallik" class="hover:text-blue-600">Afzalliklar</a></li>
+      <li><a href="#boglanish" class="block hover:text-gray-300">Bog'lanish</a></li>
+    </ul>
+  </nav>
+
+  <main id="asosiy" class="py-20 animated-bg">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+
+        <!-- Text Side -->
+        <div data-aos="fade-right">
+          <h2 class="text-4xl font-bold text-white mb-4">Bizning Vannalar</h2>
+          <p class="text-white text-lg mb-6">Kechgi vannalari zamonaviy dizayn va ishonchli sifatni birlashtiradi.
+            Bizning maqsadimiz sizning uyingizga qulaylik va go‘zallik olib kelishdir.</p>
+          <a href="#mahsulotlar"
+            class="bg-white text-blue-700 font-semibold px-5 py-3 rounded-xl hover:bg-gray-100 transition inline-block">Mahsulotlar</a>
+        </div>
+
+        <!-- Image/Icon Side -->
+        <div class="text-center" data-aos="fade-left">
+          <img src="https://via.placeholder.com/400x300?text=Vanna+Rasmi" alt="Vanna"
+            class="rounded-xl shadow-xl mx-auto">
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Mahsulotlar -->
+  <section id="mahsulotlar" class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Mahsulotlarimiz</h2>
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-white shadow rounded-2xl overflow-hidden" data-aos="fade-up">
+          <img src="https://via.placeholder.com/400x250" class="w-full h-48 object-cover" />
+          <div class="p-5">
+            <h3 class="text-xl font-semibold mb-2">Kechgi Vanna Classic</h3>
+            <p class="text-sm text-gray-600 mb-2">Lorem ipsum dolor sit amet.</p>
+            <p class="text-blue-700 font-bold text-lg mb-4">$199</p>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-xl">Sotib olish</button>
+          </div>
+        </div>
+        <div class="bg-white shadow rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://via.placeholder.com/400x250" class="w-full h-48 object-cover" />
+          <div class="p-5">
+            <h3 class="text-xl font-semibold mb-2">Kechgi Vanna Deluxe</h3>
+            <p class="text-sm text-gray-600 mb-2">Lorem ipsum dolor sit amet.</p>
+            <p class="text-blue-700 font-bold text-lg mb-4">$249</p>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-xl">Sotib olish</button>
+          </div>
+        </div>
+        <div class="bg-white shadow rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://via.placeholder.com/400x250" class="w-full h-48 object-cover" />
+          <div class="p-5">
+            <h3 class="text-xl font-semibold mb-2">Kechgi Vanna Premium</h3>
+            <p class="text-sm text-gray-600 mb-2">Lorem ipsum dolor sit amet.</p>
+            <p class="text-blue-700 font-bold text-lg mb-4">$299</p>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-xl">Sotib olish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Afzalliklar -->
+  <section id="afzallik" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8">Nega aynan biz?</h2>
+      <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow" data-aos="zoom-in">
+          <h3 class="font-semibold text-lg mb-2">100% Mahalliy</h3>
+          <p class="text-gray-600 text-sm">O‘zbekistonda ishlab chiqarilgan, sifatli materiallar.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow" data-aos="zoom-in" data-aos-delay="100">
+          <h3 class="font-semibold text-lg mb-2">3 Yil Kafolat</h3>
+          <p class="text-gray-600 text-sm">Har bir mahsulotimizga uzoq muddatli kafolat.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow" data-aos="zoom-in" data-aos-delay="200">
+          <h3 class="font-semibold text-lg mb-2">Tez Yetkazib Berish</h3>
+          <p class="text-gray-600 text-sm">O‘zbekiston bo‘ylab 2–3 kun ichida etkaziladi.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow" data-aos="zoom-in" data-aos-delay="300">
+          <h3 class="font-semibold text-lg mb-2">Oson Buyurtma</h3>
+          <p class="text-gray-600 text-sm">Telegram orqali tezda buyurtma berish mumkin.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Telegram Kontakt -->
+  <section id="boglanish" class="bg-white py-16">
+    <div class="max-w-xl mx-auto text-center px-4" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-4">Bog‘lanish</h2>
+      <p class="text-gray-600 mb-6">Telegram orqali yozing, tez javob beramiz.</p>
+      <a href="https://t.me/your_username" target="_blank"
+        class="bg-blue-600 hover:bg-blue-700 text-white text-lg font-semibold px-6 py-3 rounded-xl shadow-lg transition">
+        Telegramga yozish
+      </a>
+    </div>
+  </section>
+
+  <section class="bg-white py-16">
+    <div class="max-w-6xl mx-auto px-4" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-center mb-10">Galereya</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="https://via.placeholder.com/400x300" class="rounded-xl shadow-md hover:scale-105 transition" />
+        <img src="https://via.placeholder.com/400x300" class="rounded-xl shadow-md hover:scale-105 transition" />
+        <img src="https://via.placeholder.com/400x300" class="rounded-xl shadow-md hover:scale-105 transition" />
+        <img src="https://via.placeholder.com/400x300" class="rounded-xl shadow-md hover:scale-105 transition" />
+        <img src="https://via.placeholder.com/400x300" class="rounded-xl shadow-md hover:scale-105 transition" />
+        <img src="https://via.placeholder.com/400x300" class="rounded-xl shadow-md hover:scale-105 transition" />
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-blue-600 text-white py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-10" data-aos="fade-up">Biz haqimizda qisqacha</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+        <!-- Stat 1 -->
+        <div data-aos="zoom-in">
+          <p class="text-4xl font-bold" data-countup="500">0</p>
+          <p class="mt-2 text-sm uppercase tracking-wide">Sotilgan vannalar</p>
+        </div>
+
+        <!-- Stat 2 -->
+        <div data-aos="zoom-in" data-aos-delay="100">
+          <p class="text-4xl font-bold" data-countup="5">0</p>
+          <p class="mt-2 text-sm uppercase tracking-wide">Yillik tajriba</p>
+        </div>
+
+        <!-- Stat 3 -->
+        <div data-aos="zoom-in" data-aos-delay="200">
+          <p class="text-4xl font-bold" data-countup="10">50</p>
+          <p class="mt-2 text-sm uppercase tracking-wide">Xodimlar soni</p>
+        </div>
+
+        <!-- Stat 4 -->
+        <div data-aos="zoom-in" data-aos-delay="300">
+          <p class="text-4xl font-bold" data-countup="99">0</p>
+          <p class="mt-2 text-sm uppercase tracking-wide">% Mijoz roziligi</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-100 py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-10">Narxlar taqqoslash</h2>
+      <div class="grid md:grid-cols-3 gap-6 text-left">
+
+        <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="zoom-in">
+          <h3 class="text-xl font-semibold mb-4">Standard</h3>
+          <p class="text-3xl text-blue-600 font-bold mb-2">$199</p>
+          <ul class="text-sm text-gray-700 space-y-2 mb-4">
+            <li>✔️ Oddiy dizayn</li>
+            <li>✔️ 1 yil kafolat</li>
+            <li>✖️ Yetkazib berish kiritilmagan</li>
+          </ul>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700">Tanlash</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-blue-600 scale-105" data-aos="zoom-in"
+          data-aos-delay="100">
+          <h3 class="text-xl font-semibold mb-4">Premium</h3>
+          <p class="text-3xl text-blue-600 font-bold mb-2">$299</p>
+          <ul class="text-sm text-gray-700 space-y-2 mb-4">
+            <li>✔️ Zamonaviy dizayn</li>
+            <li>✔️ 3 yil kafolat</li>
+            <li>✔️ Tez yetkazib berish</li>
+          </ul>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700">Tanlash</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+          <h3 class="text-xl font-semibold mb-4">Deluxe</h3>
+          <p class="text-3xl text-blue-600 font-bold mb-2">$399</p>
+          <ul class="text-sm text-gray-700 space-y-2 mb-4">
+            <li>✔️ VIP dizayn</li>
+            <li>✔️ 5 yil kafolat</li>
+            <li>✔️ Bepul montaj</li>
+          </ul>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700">Tanlash</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section id="video" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 text-center" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Mahsulotimizni Video orqali Ko‘ring</h2>
+      <p class="mb-6 text-lg text-gray-600">Montaj, sifati va ko‘rinishini video orqali yaxshiroq tushunasiz</p>
+
+      <!-- YouTube Video Embed -->
+      <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-xl" data-aos="zoom-in">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/2xWwXlwrF20" title="Kechgi Vanna Demo"
+          frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer class="bg-blue-900 text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+
+      <!-- 1. Logo & Matn -->
+      <div>
+        <h3 class="text-2xl font-bold mb-3">Kechgi Vanna</h3>
+        <p class="text-gray-300">Sifatli vanna mahsulotlari. Mahalliy ishlab chiqaruvchilardan sizga to‘g‘ridan-to‘g‘ri.
+        </p>
+      </div>
+
+      <!-- 2. Menyular -->
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Sayt bo‘limlari</h4>
+        <ul class="space-y-2">
+          <li><a href="#asosiy" class="text-gray-300">Asosiy</a></li>
+          <li><a href="#mahsulotlar" class="text-gray-300">Mahsulotlar</a></li>
+          <li><a href="#fikrlar" class="text-gray-300">Mijozlar Fikri</a></li>
+          <li><a href="#video" class="text-gray-300">Video</a></li>
+        </ul>
+      </div>
+
+
+      <!-- 3. Ijtimoiy tarmoqlar -->
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Bog‘lanish</h4>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href=\"https://t.me/username\" target=\"_blank\" class=\"hover:underline\">Telegram</a></li>
+          <li><a href=\"https://instagram.com/username\" target=\"_blank\" class=\"hover:underline\">Instagram</a></li>
+          <li><a href=\"tel:+998901234567\" class=\"hover:underline\">+998 90 123 45 67</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Pastki chiziq -->
+    <div class="mt-10 text-center text-sm text-gray-400 border-t border-blue-800 pt-4">
+      © 2025 Kechgi Vanna. Barcha huquqlar himoyalangan.
+    </div>
+  </footer>
+  <!-- AOS script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="/public/app.js"></script>
+</body>
+
+</html>
